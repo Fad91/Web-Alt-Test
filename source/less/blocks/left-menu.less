@@ -1,0 +1,29 @@
+.left-menu {
+  display: flex;
+
+  @media (min-width: @mobile-width) {
+    justify-content: space-between;
+  }
+}
+
+.left-menu__callback {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    color: @text-white;
+    align-items: baseline;
+    margin-left: 60px;
+  }
+}
+
+.left-menu__callback a {
+  color: @text-orange;
+  text-decoration: none;
+  border: 1px solid #ff834e;
+  padding: 13px 26px;
+  margin-right: 30px;
+}

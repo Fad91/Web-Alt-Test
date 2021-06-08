@@ -1,0 +1,35 @@
+.intro-text-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 30px 60px 0;
+  }
+}
+
+.intro-text-wrapper__title {
+  @media (min-width: @mobile-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+  }
+}
+
+.intro-text-wrapper__content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.intro-text-wrapper__link {
+  color: @text-orange;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  text-decoration: none;
+}

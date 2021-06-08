@@ -1,0 +1,32 @@
+.clients-section {
+  background: url("../../img/clients-section-background.png") no-repeat center
+    @intro-black;
+  color: @text-white;
+  min-height: 1020px;
+  display: flex;
+  align-items: center;
+}
+
+.clients-section__wrapper {
+
+  @media (min-width: @mobile-width) {
+    .mobile-blocks-width;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 1920px;
+    margin: 0 auto;
+    // padding: 241px 20px;
+  }
+}
+
+.clients-section__title {
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 51px;
+  }
+}

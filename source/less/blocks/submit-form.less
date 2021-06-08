@@ -1,0 +1,101 @@
+.submit-form__input {
+  background-color: #f6f6f6;
+  border: 0.5px solid #d0d0d0;
+  width: 260px;
+  margin-bottom: 15px;
+  padding: 15px 15px;
+  font-family: "Montserrat", "Arial", serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.submit-form__textarea {
+  background-color: #f6f6f6;
+  border: 0.5px solid #d0d0d0;
+  font-family: "Montserrat", "Arial", serif;
+  font-size: 14px;
+  line-height: 17px;
+  resize: none;
+  padding: 15px 15px;
+  margin-bottom: 15px;
+}
+
+.submit-form__label {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    font-size: 10px;
+    line-height: 12px;
+    position: relative;
+    color: #595959;
+    margin-bottom: 10px;
+  }
+}
+
+.submit-form__label span {
+  @media (min-width: @desktop-width) {
+    padding: 0 50px 0 40px;
+  }
+}
+
+.submit-form__label > .submit-form__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.submit-form__label > span::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("../../img/checkbox-icon.svg") no-repeat;
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.submit-form__label > .submit-form__checkbox:checked + span::before {
+  background: url("../../img/checkbox-checked-icon.svg") no-repeat,
+    url("../img/checkbox-icon.svg") no-repeat;
+  display: block;
+}
+
+.submit-form__button {
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    width: 290px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: @text-white;
+    background-color: @text-orange;
+    border: none;
+    padding: 14px 10px;
+  }
+}
+
+.submit-form__label .submit-form__span--robot {
+  @media (min-width: @desktop-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    padding-top: 5px;
+    background-color: #f6f6f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.submit-form__label .submit-form__span--robot::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    background: url("../../img/recaptcha.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 135px;
+  }
+}

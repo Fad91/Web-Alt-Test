@@ -1,0 +1,30 @@
+.description-section {
+  background: @header-background;
+  background: url("../../img/description-section-background.png") no-repeat
+    center @intro-black;
+  background-size: 1920px 1061px;
+  color: @text-white;
+}
+
+.description-section__wrapper {
+
+  @media (min-width: @mobile-width) {
+    .mobile-blocks-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding-top: 68px;
+  }
+}
+
+.description-section__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+}

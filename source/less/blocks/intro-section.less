@@ -1,0 +1,27 @@
+.intro-section {
+  color: @text-white;
+
+  @media (min-width: @mobile-width) {
+    background: url("../../img/mobile-intro-background.png") no-repeat top center
+      @intro-black;
+      background-size: 320px 526px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url(../../img/intro-section-background.png) no-repeat center
+      @intro-black;
+    background-size: 1920px 1200px;
+  }
+}
+
+.intro-section__wrapper {
+  @media (min-width: @mobile-width) {
+    .mobile-blocks-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    .desktop-blocks-width;
+    display: flex;
+    padding: 75px;
+  }
+}

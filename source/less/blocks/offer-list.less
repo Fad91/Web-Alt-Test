@@ -1,0 +1,25 @@
+.offer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-list__item {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+  }
+}
+
+.offer-list__item::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url("../../img/offer-plus-icon.svg");
+    display: block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+}

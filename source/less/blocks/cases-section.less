@@ -1,0 +1,34 @@
+.cases-section {
+  background: url("../../img/cases-section-background.png") no-repeat center
+    @intro-black;
+  color: @text-white;
+}
+
+.cases-section__wrapper {
+  @media (min-width: @mobile-width) {
+    .mobile-blocks-width;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+
+.cases-section__title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 51px;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 51px;
+    margin-top: 50px;
+  }
+}

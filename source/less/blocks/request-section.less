@@ -1,0 +1,22 @@
+.request-section {
+  background: url("../../img/request-section-background.png") no-repeat top center @intro-black;
+  color: @text-white;
+  min-height: 832px;
+  display: flex;
+  align-items: center;
+}
+
+.request-section__wrapper {
+  @media (min-width: @mobile-width) {
+    .mobile-blocks-width;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+}
