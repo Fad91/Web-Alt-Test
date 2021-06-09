@@ -1,8 +1,15 @@
 .cases-list {
   list-style: none;
+  padding: 0;
+  display: flex;
+
+  @media (min-width: @mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }

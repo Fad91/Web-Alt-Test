@@ -1,7 +1,27 @@
-.logos ul{
+.logos {
+  @media (min-width: @mobile-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+  }
+}
+
+.logos ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  align-items: center;
+
+  @media (min-width: @mobile-width) {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+  }
 }

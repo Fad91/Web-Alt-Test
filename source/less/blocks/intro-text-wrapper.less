@@ -1,7 +1,11 @@
 .intro-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @mobile-width) {
+    padding: 30px 20px 23px 20px;
+  }
+
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
     padding: 80px 30px 60px 0;
   }
 }
@@ -11,6 +15,7 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 28px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,15 +26,30 @@
 }
 
 .intro-text-wrapper__content {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 .intro-text-wrapper__link {
   color: @text-orange;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 28px;
   text-decoration: none;
+  font-weight: 700;
+
+  @media (min-width: @mobile-width) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 23px;
+    line-height: 28px;
+  }
 }

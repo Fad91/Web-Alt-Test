@@ -1,15 +1,20 @@
 .description-section {
-  background: @header-background;
+  @media (min-width: @mobile-width) {
+    background: @intro-black;
+  }
+
+  @media (min-width: @desktop-width) {
   background: url("../../img/description-section-background.png") no-repeat
     center @intro-black;
   background-size: 1920px 1061px;
   color: @text-white;
+  }
 }
 
 .description-section__wrapper {
-
   @media (min-width: @mobile-width) {
     .mobile-blocks-width;
+    background: @text-white;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,11 +25,22 @@
 }
 
 .description-section__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 32px;
-  text-align: center;
-  margin-top: 0;
-  padding-top: 40px;
+  @media (min-width: @mobile-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #393939;
+    padding: 30px 50px;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
+  }
 }

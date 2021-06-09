@@ -1,4 +1,12 @@
 .payment-description {
+  @media (min-width: @mobile-width) {
+    width: 100%;
+    color: @text-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (min-width: @desktop-width) {
     width: 600px;
     margin-top: 120px;
@@ -6,6 +14,15 @@
 }
 
 .payment-description__title {
+  @media (min-width: @mobile-width) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 0;
+    padding: 0 40px;
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 600;
     font-size: 26px;
@@ -14,6 +31,11 @@
 }
 
 .payment-description__content {
+@media (min-width: @mobile-width) {
+  text-align: center;
+}
+
+
   @media (min-width: @desktop-width) {
     font-style: normal;
     font-weight: normal;

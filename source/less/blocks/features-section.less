@@ -1,14 +1,20 @@
 .features-section {
-  background: url("../../img/features-section-background.png") no-repeat center
-    @intro-black;
+  @media (min-width: @mobile-width) {
+    background: url("../../img/features-section-mobile-background.png") no-repeat
+      center @intro-black;
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/features-section-background.png") no-repeat
+      center @intro-black;
+  }
 }
 
 .features-section__wrapper {
-
   @media (min-width: @mobile-width) {
     .mobile-blocks-width;
   }
-
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
@@ -25,7 +31,19 @@
   width: 100%;
 }
 
-.features-section__image img {
-  width: 396px;
-  height: 635px;
+.features-section__image {
+  @media (min-width: @mobile-width) {
+    order: -1;
+  }
+}
+
+.features-section__image img:first-child {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 396px;
+    height: 635px;
+  }
 }

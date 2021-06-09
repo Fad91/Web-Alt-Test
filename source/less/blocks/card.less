@@ -1,9 +1,24 @@
 .card {
-  width: 243px;
-  margin-right: 70px;
+  @media (min-width: @mobile-width) {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 243px;
+    margin-right: 70px;
+  }
 }
 
 .card__image img {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
   @media (min-width: @desktop-width) {
     width: 230px;
     height: 240px;
@@ -13,14 +28,34 @@
 }
 
 .card__content {
+  @media (min-width: @mobile-width) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #393939;
+    text-transform: uppercase;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 0;
   }
 }
 
-.card__content:first-of-type {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  margin-left: 30px;
+.card span {
+  @media (min-width: @mobile-width) {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-right: 7px;
+    color: #393939;
+  }
 }
+
+// .card__content:first-of-type {
+//   font-weight: normal;
+//   font-size: 18px;
+//   line-height: 22px;
+//   margin-left: 30px;
+// }

@@ -1,8 +1,21 @@
+.request-description {
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
 .request-description__content {
+  @media (min-width: @mobile-width) {
+    order: 2;
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    order: 0;
   }
 }
 

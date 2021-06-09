@@ -1,12 +1,29 @@
+.submit-form {
+  @media (min-width: @mobile-width) {
+    text-align: center;
+    padding: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .submit-form__input {
-  background-color: #f6f6f6;
-  border: 0.5px solid #d0d0d0;
-  width: 260px;
-  margin-bottom: 15px;
-  padding: 15px 15px;
-  font-family: "Montserrat", "Arial", serif;
-  font-size: 14px;
-  line-height: 17px;
+  @media (min-width: @mobile-width) {
+    width: 219px;
+    background-color: #f6f6f6;
+    border: 0.5px solid #d0d0d0;
+    padding: 15px 15px;
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 260px;
+  }
 }
 
 .submit-form__textarea {
@@ -16,22 +33,35 @@
   font-size: 14px;
   line-height: 17px;
   resize: none;
-  padding: 15px 15px;
   margin-bottom: 15px;
+  width: 220px;
+
+  @media (min-width: @mobile-width) {
+    padding: 15px 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px;
+    width: 260px;
+  }
 }
 
 .submit-form__label {
+  display: flex;
+  position: relative;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 10px;
+
   @media (min-width: @desktop-width) {
-    display: flex;
-    font-size: 10px;
-    line-height: 12px;
-    position: relative;
     color: #595959;
-    margin-bottom: 10px;
   }
 }
 
 .submit-form__label span {
+  padding: 0 30px 0 60px;
+  text-align: left;
+
   @media (min-width: @desktop-width) {
     padding: 0 50px 0 40px;
   }
@@ -49,9 +79,17 @@
   height: 22px;
   background: url("../../img/checkbox-icon.svg") no-repeat;
   position: absolute;
-  left: 2px;
-  top: 5px;
   cursor: pointer;
+
+  @media (min-width: @mobile-width) {
+    left: 2px;
+    top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 2px;
+    top: 5px;
+  }
 }
 
 .submit-form__label > .submit-form__checkbox:checked + span::before {
@@ -61,17 +99,23 @@
 }
 
 .submit-form__button {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @mobile-width) {
     margin-top: 30px;
-    width: 290px;
+    width: 250px;
     font: inherit;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: @text-white;
-    background-color: @text-orange;
+    background: linear-gradient(113.3deg, #DE9B55 -8.73%, #EE5432 93.23%);
+    box-shadow: 0px 4px 4px rgba(222, 155, 85, 0.3);
     border: none;
     padding: 14px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    width: 290px;
   }
 }
 
