@@ -76,12 +76,18 @@
       <div class="description-section__wrapper">
         <h2 class="description-section__title">КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ</h2>
         <ul class="description-section__list card-list">
-          <li class="card-list__item card">
+          <li class="card-list__item card card--first">
             <div class="card__image">
               <img src="./img/case-one-image.svg" alt="">
             </div>
             <span>01</span>
             <p class="card__content">Анализ Целевой Аудитории</p>
+            <div class="modal modal--closed">
+              <h3 class="modal__title">Принимайте платежи картой, с помощью удобных платежных систем!</h3>
+              <p class="modal__content">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal,
+                Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или
+                Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+            </div>
           </li>
           <li class="card-list__item card">
             <div class="card__image">
@@ -135,49 +141,58 @@
             покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета
             мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
           </p>
-          <div class="features-section__image">
-            <img src="./img/web-pay-image.png" alt="">
-          </div>
           <div class="logos">
             <ul>
               <li>
-                <img src="./img/sberbank-logo.png" alt="Сбербанк">
+                <picture>
+                  <source media="(min-width: 1410px)" srcset="./img/sberbank-logo.png">
+                  <img src="./img/sberbank-mobile-logo.png" alt="Сбербанк">
+                </picture>
               </li>
               <li>
-                <img src="./img/yandex-logo.png" alt="Яндекс">
+                <picture>
+                  <source media="(min-width: 1410px)" srcset="./img/yandex-logo.png">
+                  <img src="./img/yandex-mobile-logo.png" alt="Яндекс">
+                </picture>
               </li>
               <li>
-                <img src="./img/logo-robokassa.png" alt="Робокасса">
+                <picture>
+                  <source media="(min-width: 1410px)" srcset="./img/logo-robokassa.png">
+                  <img src="./img/robokassa-mobile-logo.png" alt="Робокасса">
+                </picture>
               </li>
             </ul>
           </div>
-          <div class="features-section__text payment-description">
-            <h2 class="payment-description__title">
-              Принимайте картой, пустые нули !
-            </h2>
-            <p class="payment-description__content">
-              Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
-            </p>
-            <div class="features-section__image">
-              <picture>
-                <source media="(min-width:1410px)" srcset="./img/secure-mobile-image.png">
-                <img src="./img/secure-mobile-section-image.png" alt="">
-              </picture>
-            </div>
-            <div class="features-section__text payment-description">
-              <h2 class="payment-description__title">
-                Интегрируем неинтегрируемое!
-              </h2>
-              <p class="payment-description__content">
-                Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши
-                покупатели смогут безопасно.
-              </p>
-              <div class="features-section__image">
-                <picture>
-                  <source media="(min-width:1410px)" srcset="./img/goods-mobile-image.png">
-                  <img src="./img/goods-mobile-section-image.png" alt="">
-                </picture>
-              </div>
+        </div>
+        <div class="features-section__text payment-description payment-description--closed">
+          <h2 class="payment-description__title">
+            Принимайте картой, пустые нули !
+          </h2>
+          <p class="payment-description__content">
+            Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши
+            покупатели смогут безопасно.
+          </p>
+          <div class="features-section__image">
+            <picture>
+              <source media="(min-width:1410px)" srcset="./img/secure-mobile-image.png">
+              <img src="./img/secure-mobile-section-image.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="features-section__text payment-description payment-description--closed">
+          <h2 class="payment-description__title">
+            Интегрируем неинтегрируемое!
+          </h2>
+          <p class="payment-description__content">
+            Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши
+            покупатели смогут безопасно.
+          </p>
+          <div class="features-section__image">
+            <picture>
+              <source media="(min-width:1410px)" srcset="./img/goods-mobile-image.png">
+              <img src="./img/goods-mobile-section-image.png" alt="">
+            </picture>
+          </div>
         </div>
         <div class="features-section__links features-links">
           <ul class="features-links_list links-list">
@@ -196,7 +211,7 @@
             <picture>
               <source media="(min-width:1410px)" srcset="./img/flowers-kingdom-image.jpg" alt="">
               <img src="./img/mobile-flowers-kingdom-image.png" alt="" class="case-card__image">
-          </picture>
+            </picture>
             <h3 class="case-card__title">Королевство цветов</h3>
             <p class="case-card__content">Интернет-магазин</p>
           </li>
@@ -204,23 +219,23 @@
             <picture>
               <source media="(min-width:1410px)" srcset="./img/master-klimat-image.jpg" alt="">
               <img src="./img/mobile-master-klimat-image.svg" alt="" class="case-card__image">
-          </picture>
+            </picture>
             <h3 class="case-card__title">Мастер климат</h3>
             <p class="case-card__content">Интернет-магазин</p>
           </li>
           <li class="cases-list__item case-card">
             <picture>
-            <source media="(min-width:1410px)" srcset="./img/new-pharmacy-image.jpg" alt="">
-            <img src="./img/mobile-new-pharmacy-image.png" alt="" class="case-card__image">
-          </picture>
+              <source media="(min-width:1410px)" srcset="./img/new-pharmacy-image.jpg" alt="">
+              <img src="./img/mobile-new-pharmacy-image.png" alt="" class="case-card__image">
+            </picture>
             <h3 class="case-card__title">Новая аптека</h3>
             <p class="case-card__content">Интернет-магазин</p>
           </li>
           <li class="cases-list__item case-card">
             <picture>
-            <source media="(min-width:1410px)" srcset="./img/east-tech-reserve-image.jpg" alt="">
-            <img src="./img/mobile-east-tech-reserve-image.png" alt="" class="case-card__image">
-          </picture>
+              <source media="(min-width:1410px)" srcset="./img/east-tech-reserve-image.jpg" alt="">
+              <img src="./img/mobile-east-tech-reserve-image.png" alt="" class="case-card__image">
+            </picture>
             <h3 class="case-card__title">Восток Тех Резерв</h3>
             <p class="case-card__content">Интернет-магазин</p>
           </li>
@@ -265,19 +280,19 @@
           </li>
         </ul>
         <div class="buttons">
-        <button type="button" class="buttons__button buttons__button--left">
-          <picture>
-            <source media="(min-width: 1410px)" srcset="./img/button-left-icon.svg">
-          <img src="./img/mobile-left-button-icon.svg" alt="">
-        </picture>
-        </button>
-        <button type="button" class="buttons__button buttons__button--right">
-          <picture>
-            <source media="(min-width: 1410px)" srcset="./img/button-right-icon.svg">
-          <img src="./img/mobile-right-button-icon.svg" alt="">
-          </picture>
-        </button>
-      </div>
+          <button type="button" class="buttons__button buttons__button--left">
+            <picture>
+              <source media="(min-width: 1410px)" srcset="./img/button-left-icon.svg">
+              <img src="./img/mobile-left-button-icon.svg" alt="">
+            </picture>
+          </button>
+          <button type="button" class="buttons__button buttons__button--right">
+            <picture>
+              <source media="(min-width: 1410px)" srcset="./img/button-right-icon.svg">
+              <img src="./img/mobile-right-button-icon.svg" alt="">
+            </picture>
+          </button>
+        </div>
       </div>
     </section>
     <section class="request-section">
@@ -305,9 +320,9 @@
               <span>Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</span>
             </label>
             <label for="robot" class="submit-form__label">
-            <input type="checkbox" name="robot" id="robot" class="submit-form__checkbox">
-            <span class="submit-form__span--robot">I’am a robot</span>
-          </label>
+              <input type="checkbox" name="robot" id="robot" class="submit-form__checkbox">
+              <span class="submit-form__span--robot">I’am a robot</span>
+            </label>
             <button type="submit" class="submit-form__button">Отправить</button>
           </form>
         </div>
@@ -317,7 +332,10 @@
   <footer class="page__footer footer">
     <div class="footer__wrapper">
       <div class="logo">
-        <img src="./img/footer-logo.svg" alt="web-alternative">
+        <picture>
+          <source media="(min-width: 1410px)" srcset="./img/footer-logo.svg">
+          <img src="./img/mobile-footer-logo.svg" alt="web-alternative">
+        </picture>
       </div>
       <div class="contacts">
         <h4 class="contacts__title">Контакты</h4>
@@ -344,10 +362,14 @@
         <h4 class="location__content">
           Найди нас на карте
         </h4>
-        <img src="./img/footer-map-icon.svg" alt="Карта" class="location__image">
+        <picture>
+          <source media="(min-width: 1410px)" srcset="./img/footer-map-icon.svg">
+          <img src="./img/footer-map-mobile-icon.svg" alt="Карта" class="location__image">
+        </picture>
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

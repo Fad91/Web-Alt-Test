@@ -42,6 +42,8 @@
   color: @text-orange;
   text-decoration: none;
   font-weight: 700;
+  position: relative;
+  padding-left: 15px;
 
   @media (min-width: @mobile-width) {
     font-size: 13px;
@@ -51,5 +53,15 @@
   @media (min-width: @desktop-width) {
     font-size: 23px;
     line-height: 28px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../img/mobile-cart-icon.svg");
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 10px;
   }
 }

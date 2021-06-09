@@ -14,6 +14,7 @@
 .features-section__wrapper {
   @media (min-width: @mobile-width) {
     .mobile-blocks-width;
+    padding-top: 85px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +36,10 @@
   @media (min-width: @mobile-width) {
     order: -1;
   }
+
+  @media(min-width: @desktop-width) {
+    order: 0;
+  }
 }
 
 .features-section__image img:first-child {
@@ -43,6 +48,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
     width: 396px;
     height: 635px;
   }

@@ -1,8 +1,20 @@
 .consultation-wrapper {
+  @media (min-width: @mobile-width) {
+    width: 278px;
+    background: linear-gradient(147.62deg, #8d5dcc -128.51%, #55329e 221.38%);
+    box-shadow: 0px 5px 10px rgba(94, 56, 158, 0.35);
+    border-radius: 3px;
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    background: none;
+    box-shadow: none;
+    width: 990px;
   }
 }
 
@@ -11,6 +23,10 @@
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +35,18 @@
     line-height: 22px;
     background-color: @consultation-content-purple;
     padding: 20px;
+  }
+
+  &::before {
+    @media(max-width: @mobile-width-only) {
+      content: "";
+      background: url("../../img/love-icon.svg") no-repeat;
+      width: 43px;
+      height: 43px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
   }
 }
 

@@ -1,10 +1,18 @@
 .logos {
   @media (min-width: @mobile-width) {
     order: -1;
+    background-color: @text-white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
+    background: none;
   }
 }
 

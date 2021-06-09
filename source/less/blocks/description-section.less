@@ -1,4 +1,6 @@
 .description-section {
+  position: relative;
+
   @media (min-width: @mobile-width) {
     background: @intro-black;
   }
@@ -14,13 +16,14 @@
 .description-section__wrapper {
   @media (min-width: @mobile-width) {
     .mobile-blocks-width;
-    background: @text-white;
+    background: url("../../img/description-section-background-mobile.png") no-repeat center;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     margin: 0 auto;
     padding-top: 68px;
+    background: none;
   }
 }
 

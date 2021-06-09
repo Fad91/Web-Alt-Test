@@ -9,6 +9,7 @@
 .request-description__content {
   @media (min-width: @mobile-width) {
     order: 2;
+    color: @text-white;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,12 +21,15 @@
 }
 
 .request-description__title {
+
+  @media (min-width: @mobile-width) {
+    color: @request-description-orange;
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 700;
     font-size: 41px;
     line-height: 50px;
-
-    color: @request-description-orange;
     margin-bottom: 60px;
   }
 }

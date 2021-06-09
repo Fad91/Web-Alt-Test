@@ -52,6 +52,7 @@
   font-size: 10px;
   line-height: 12px;
   margin-bottom: 10px;
+  color: @text-white;
 
   @media (min-width: @desktop-width) {
     color: #595959;
@@ -61,6 +62,7 @@
 .submit-form__label span {
   padding: 0 30px 0 60px;
   text-align: left;
+
 
   @media (min-width: @desktop-width) {
     padding: 0 50px 0 40px;
@@ -120,7 +122,7 @@
 }
 
 .submit-form__label .submit-form__span--robot {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @mobile-width) {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -133,11 +135,19 @@
 }
 
 .submit-form__label .submit-form__span--robot::after {
-  @media (min-width: @desktop-width) {
-    content: "";
-    background: url("../../img/recaptcha.svg") no-repeat;
+  content: "";
+  background: url("../../img/recaptcha.svg") no-repeat;
+
+  @media(min-width: @mobile-width) {
     width: 30px;
     height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 145px;
+  }
+
+
+  @media (min-width: @desktop-width) {
     position: absolute;
     top: 5px;
     left: 135px;
